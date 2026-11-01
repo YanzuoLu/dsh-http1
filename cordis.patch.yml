@@ -1,0 +1,6 @@
+# dsh-http1 bundle patch: mounts the plugin that sends outbound fetch
+# requests over HTTP/1.1.
+
+- insert:
+    - id: http1
+      name: dsh-http1

@@ -1,0 +1,40 @@
+{
+  "name": "dsh-http1",
+  "version": "0.1.0",
+  "description": "Send DeepSeek Harness outbound fetch requests over HTTP/1.1",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "http1",
+    "undici"
+  ],
+  "license": "MIT",
+  "author": "Yanzuo Lu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YanzuoLu/dsh-http1.git"
+  },
+  "homepage": "https://github.com/YanzuoLu/dsh-http1#readme",
+  "bugs": {
+    "url": "https://github.com/YanzuoLu/dsh-http1/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "undici": "8.12.2"
+  }
+}
